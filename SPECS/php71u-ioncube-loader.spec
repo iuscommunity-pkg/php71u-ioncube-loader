@@ -1,5 +1,5 @@
-%global php_base php70u
-%global php_basever 7.0
+%global php_base php71u
+%global php_basever 7.1
 
 %global with_zts 0%{?__ztsphp:1}
 # [ionCube Loader] The Loader must appear as the first entry in the php.ini file
@@ -10,7 +10,7 @@ Summary:    IonCube Loader provides PHP Modules to read IonCube Encoded Files
 Version:    10.1.0
 Release:    1.ius%{?dist}
 License:    Redistributable, no modification permitted
-URL:        http://www.ioncube.com
+URL:        https://www.ioncube.com
 Group:      Development/Languages
 ExclusiveArch: %{ix86} x86_64
 # the files in the source are pre-complied for 32bit and 64bit
@@ -87,6 +87,9 @@ EOF
 
 
 %changelog
+* Wed Jan 10 2018 Ben Harper <ben.harper@rackspace.com> - 10.1.0-1.ius
+- port from php70u-ioncube-loader
+
 * Fri Dec 15 2017 Ben Harper <ben.harper@rackspace.com> - 10.1.0-1.ius
 - Latest upstream
 
